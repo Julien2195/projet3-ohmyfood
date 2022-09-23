@@ -1,0 +1,71 @@
+section {
+    padding: 20px;
+}
+
+@mixin cardImg {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+
+}
+
+
+.restaurant-card {
+    margin-bottom: 30px;
+}
+
+.card-img img {
+    @include cardImg;
+
+
+}
+
+.card-img {
+    overflow: hidden;
+    background-color: white;
+    border: 0 solid black;
+    border-radius: 15px;
+    box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.2);
+    position: relative;
+
+    .nouveau {
+        background-color: rgb(153, 226, 208);
+        color: rgb(2, 63, 2);
+        font-family: "Roboto", sans-serif;
+        padding: 10px;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+
+    .card-information {
+        margin: 5px 10px;
+    }
+
+    h4 {
+        font-size: 1.4em;
+    }
+
+    p {
+        font-size: 1.2em;
+        padding-bottom: 15px;
+    }
+
+    h4,
+    p {
+        margin: 0;
+        padding-left: 10px;
+    }
+
+    .alignement-heart {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .fa-heart {
+        font-size: 35px;
+        padding: 10px 20px 0 0;
+    }
+}

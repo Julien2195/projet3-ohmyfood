@@ -1,4 +1,36 @@
 footer {
     background-color: rgb(53, 53, 53);
     width: 100%;
+    padding: 20px 0;
+
+    .global-footer {
+        padding-left: 20px;
+    }
+
+    h2 {
+        color: white;
+        font-family: "Shrikhand", sans-serif;
+        font-weight: 300;
+    }
+
+    .fa-utensils {
+        margin-right: 20px;
+    }
+
+    .fa-handshake-angle {
+        margin-right: 11px;
+    }
+
+    ul {
+        padding: 0;
+    }
+
+    li {
+        font-family: "Roboto", sans-serif;
+        font-size: 20px;
+        color: white;
+
+    }
+
+
 }

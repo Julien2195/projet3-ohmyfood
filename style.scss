@@ -1,6 +1,6 @@
 /////////ABSTRACTS//////////////
 @import 'sass/abstracts/mixins';
-
+@import 'sass/abstracts/variables';
 
 ////////BASE///////////////////
 @import "sass/base/normalize";
@@ -14,3 +14,40 @@
 @import "sass/layouts/deskop";
 @import "sass/layouts/section";
 @import "sass/layouts/footer";
+
+
+////////////////////////////////////////////////////////////////
+body {
+    background-color: rgb(243, 243, 243);
+    margin: 0 auto;
+
+
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-family: "Shrikhand", sans-serif;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.8em;
+    font-family: $fontRoboto;
+}
+
+h3 {
+    font-family: $fontRoboto;
+    padding-left: 15px;
+    font-weight: bold;
+}
+
+h4 {
+    font-family: $fontRoboto;
+}
+
+ul {
+    list-style-type: none;
+}

@@ -1,0 +1,73 @@
+@import 'sass/abstracts/mixins';
+@import 'sass/abstracts/variables';
+@import 'sass/abstracts/animations';
+
+////////BASE///////////////////
+@import "sass/base/normalize";
+@import "sass/base/typography";
+
+///////LAYOUTS//////////////////
+@import "sass/layouts/header";
+@import 'sass/layouts/deskop';
+
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(243, 243, 243);
+    margin: 0 auto;
+    min-width: 300px;
+
+}
+
+////////////////HEDER///////////
+header {
+    align-items: center;
+    position: relative;
+
+
+
+    .fa-arrow-left {
+        font-size: 25px;
+        color: rgb(66, 64, 64);
+        padding-right: 150px;
+        position: absolute;
+
+        left: 20px;
+    }
+
+}
+
+//////////IMAGE PRINCIPALE////////////////
+.img-primary {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    position: relative;
+    z-index: 1;
+}
+
+
+///////////////////////CARTE//////////////////
+main {
+
+    @include menuGlobal;
+
+
+    .titre_principal {
+        @include titreCoeur;
+
+
+        h2 {
+            @include titreH2;
+        }
+    }
+
+    .fa-heart {
+        @include heart;
+    }
+}

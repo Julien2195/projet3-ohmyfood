@@ -36,3 +36,37 @@
     object-fit: cover;
 
 }
+
+// MIXINS CARTE MENU
+
+@mixin menuGlobal {
+    background: rgb(246, 246, 246);
+    border-radius: 33px;
+    position: absolute;
+    z-index: 2;
+    height: 400px;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 300px;
+    top: 520px;
+}
+
+@mixin titreCoeur {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+@mixin titreH2 {
+
+    font-size: 1.7em;
+    font-family: 'Shrikhand', sans-serif;
+    font-weight: normal;
+}
+
+@mixin heart {
+    font-size: 25px;
+    margin-left: 50px;
+}

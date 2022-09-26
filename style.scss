@@ -15,7 +15,7 @@
 @import "sass/layouts/deskop";
 @import "sass/layouts/section";
 @import "sass/layouts/footer";
-
+@import 'sass/layouts/palettedugout';
 
 ////////////////////////////////////////////////////////////////
 body {
@@ -27,6 +27,7 @@ body {
 
 a {
     text-decoration: none;
+    color: black;
 }
 
 h1 {

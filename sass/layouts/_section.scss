@@ -60,6 +60,24 @@ section {
 
     .fa-heart {
         font-size: 35px;
-        padding: 10px 20px 0 0;
+        padding: 10px 0px 0 0;
     }
+
+    .fa-regular {
+        position: absolute;
+        right: 50px;
+    }
+
+    .fa-solid {
+        position: relative;
+        opacity: 0;
+        margin-right: 40px;
+    }
+
+    .coeur--modif:hover {
+        .fa-solid {
+            animation: heartAnimation 500ms forwards;
+        }
+    }
+
 }

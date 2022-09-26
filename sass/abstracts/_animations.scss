@@ -1,0 +1,17 @@
+//ANIMATION COEUR
+@keyframes heartAnimation {
+    from {
+        transform: scale(0);
+        transform-origin: bottom;
+        opacity: 0;
+
+    }
+
+    to {
+        transform: scale(1);
+        background: linear-gradient(0deg, rgba(255, 121, 218, 1) 0%, rgba(147, 86, 220, 1) 75%, rgba(147, 86, 220, 1) 100%);
+        color: transparent;
+        background-clip: text;
+        opacity: 1;
+    }
+}

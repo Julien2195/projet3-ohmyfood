@@ -1,3 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@-webkit-keyframes heartAnimation {
+  from {
+    transform: scale(0);
+    transform-origin: bottom;
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    background: linear-gradient(0deg, rgb(255, 121, 218) 0%, rgb(147, 86, 220) 75%, rgb(147, 86, 220) 100%);
+    color: transparent;
+    -webkit-background-clip: text;
+            background-clip: text;
+    opacity: 1;
+  }
+}
+@keyframes heartAnimation {
+  from {
+    transform: scale(0);
+    transform-origin: bottom;
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    background: linear-gradient(0deg, rgb(255, 121, 218) 0%, rgb(147, 86, 220) 75%, rgb(147, 86, 220) 100%);
+    color: transparent;
+    -webkit-background-clip: text;
+            background-clip: text;
+    opacity: 1;
+  }
+}
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -5,8 +37,6 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -394,7 +424,20 @@ section {
 }
 .card-img .fa-heart {
   font-size: 35px;
-  padding: 10px 20px 0 0;
+  padding: 10px 0px 0 0;
+}
+.card-img .fa-regular {
+  position: absolute;
+  right: 50px;
+}
+.card-img .fa-solid {
+  position: relative;
+  opacity: 0;
+  margin-right: 40px;
+}
+.card-img .coeur--modif:hover .fa-solid {
+  -webkit-animation: heartAnimation 500ms forwards;
+          animation: heartAnimation 500ms forwards;
 }
 
 header {
@@ -565,7 +608,20 @@ section {
 }
 .card-img .fa-heart {
   font-size: 35px;
-  padding: 10px 20px 0 0;
+  padding: 10px 0px 0 0;
+}
+.card-img .fa-regular {
+  position: absolute;
+  right: 50px;
+}
+.card-img .fa-solid {
+  position: relative;
+  opacity: 0;
+  margin-right: 40px;
+}
+.card-img .coeur--modif:hover .fa-solid {
+  -webkit-animation: heartAnimation 500ms forwards;
+          animation: heartAnimation 500ms forwards;
 }
 
 footer {

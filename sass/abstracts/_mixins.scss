@@ -50,12 +50,13 @@
     transform: translate(-50%, -50%);
     min-width: 300px;
     top: 520px;
+    padding: 10px 20px;
 }
 
 @mixin titreCoeur {
     display: flex;
     align-items: center;
-    justify-content: center;
+
 
 }
 
@@ -69,4 +70,17 @@
 @mixin heart {
     font-size: 25px;
     margin-left: 50px;
+}
+
+@mixin titrePlats {
+    font-family: $fontRoboto;
+    font-weight: normal;
+    margin: 0;
+    padding-bottom: 7px;
+}
+
+@mixin BordurePlats {
+    background-color: rgb(153, 226, 208);
+    width: 50px;
+    height: 4px;
 }

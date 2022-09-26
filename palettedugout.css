@@ -384,6 +384,11 @@ header h1 {
   margin: 0;
 }
 
+@media screen and (min-width: 500px) {
+  .titre_principal {
+    justify-content: center;
+  }
+}
 @media screen and (min-width: 668px) {
   .global-choix {
     display: flex;
@@ -449,11 +454,11 @@ main {
   transform: translate(-50%, -50%);
   min-width: 300px;
   top: 520px;
+  padding: 10px 20px;
 }
 main .titre_principal {
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 main .titre_principal h2 {
   font-size: 1.7em;
@@ -463,4 +468,42 @@ main .titre_principal h2 {
 main .fa-heart {
   font-size: 25px;
   margin-left: 50px;
+}
+
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  margin: 0;
+  padding-bottom: 7px;
+}
+
+.border-color {
+  background-color: rgb(153, 226, 208);
+  width: 50px;
+  height: 4px;
+}
+
+.cards-global {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 75px;
+  margin: 20px 0;
+}
+.cards-global h4 {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2em;
+}
+.cards-global .card {
+  padding: 15px 30px 15px 10px;
+}
+.cards-global p {
+  margin-top: 10px;
+  font-family: "Roboto", sans-serif;
+}
+.cards-global .information-menu {
+  display: flex;
+  justify-content: space-between;
 }/*# sourceMappingURL=palettedugout.css.map */

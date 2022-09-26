@@ -71,3 +71,44 @@ main {
         @include heart;
     }
 }
+
+h3 {
+    @include titrePlats;
+
+
+}
+
+.border-color {
+    @include BordurePlats;
+}
+
+.cards-global {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 2px rgb(0 0 0 / 0.2);
+    width: 100%;
+    height: 75px;
+
+    margin: 20px 0;
+
+    h4 {
+        margin: 0;
+        font-family: $fontRoboto;
+        font-size: 1.2em;
+    }
+
+    .card {
+        padding: 15px 30px 15px 10px;
+
+    }
+
+    p {
+        margin-top: 10px;
+        font-family: $fontRoboto;
+    }
+
+    .information-menu {
+        display: flex;
+        justify-content: space-between;
+    }
+}

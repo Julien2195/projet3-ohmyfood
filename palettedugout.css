@@ -385,7 +385,13 @@ header h1 {
 }
 
 @media screen and (min-width: 500px) {
+  main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
   .titre_principal {
+    display: flex;
     justify-content: center;
   }
 }
@@ -407,11 +413,6 @@ header h1 {
     width: 49%;
   }
 }
-@media screen and (min-width: 992px) {
-  main {
-    max-width: 97%;
-  }
-}
 * {
   box-sizing: border-box;
 }
@@ -420,6 +421,11 @@ body {
   background-color: rgb(243, 243, 243);
   margin: 0 auto;
   min-width: 300px;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
 }
 
 header {
@@ -439,21 +445,17 @@ header .fa-arrow-left {
   height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
-  position: relative;
   z-index: 1;
 }
 
 main {
   background: rgb(246, 246, 246);
   border-radius: 33px;
-  position: absolute;
+  position: relative;
   z-index: 2;
-  height: 400px;
-  width: 100%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  height: auto;
   min-width: 300px;
-  top: 520px;
+  top: -30px;
   padding: 10px 20px;
 }
 main .titre_principal {
@@ -483,27 +485,50 @@ h3 {
   height: 4px;
 }
 
-.cards-global {
+.card {
   background-color: white;
   border-radius: 15px;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
-  width: 100%;
+  max-width: 400px;
   height: 75px;
   margin: 20px 0;
 }
-.cards-global h4 {
+.card h4 {
   margin: 0;
   font-family: "Roboto", sans-serif;
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
-.cards-global .card {
-  padding: 15px 30px 15px 10px;
+.card .card--modif {
+  padding: 15px 10px;
 }
-.cards-global p {
+.card .ellipse {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.card p {
   margin-top: 10px;
   font-family: "Roboto", sans-serif;
 }
-.cards-global .information-menu {
+
+.information-menu {
   display: flex;
   justify-content: space-between;
+}
+
+.prix {
+  margin: 15px;
+  font-weight: bold;
+}
+.prix .btn--primary {
+  background: linear-gradient(0deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 100%);
+  width: 250px;
+  border-radius: 35px;
+  margin: auto;
+}
+.prix .btn--primary p {
+  margin: 0;
+  padding: 12px 20px;
+  color: white;
+  text-align: center;
 }/*# sourceMappingURL=palettedugout.css.map */

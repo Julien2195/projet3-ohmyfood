@@ -1,9 +1,13 @@
+///////ACCUEUIL///////////
+
+//MAIN - POSITION/INFOS
 @mixin alignement {
     display: flex;
     justify-content: center;
     align-items: center
 }
 
+//MAIN - FONCTIONNEMENT 
 @mixin fonctionnementMenu {
 
     background-color: rgb(246, 246, 246);
@@ -13,6 +17,7 @@
     box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.2);
 }
 
+//MAIN - NUMERO (1,2,3)
 @mixin number {
     position: absolute;
     top: 18px;
@@ -23,6 +28,7 @@
     color: white;
 }
 
+//MAIN - PLATS 
 @mixin choixModification {
     margin-left: 20px;
     display: flex;
@@ -30,6 +36,7 @@
 
 }
 
+//SECTION - CARD 
 @mixin cardImg {
     width: 100%;
     height: 220px;
@@ -37,8 +44,18 @@
 
 }
 
-// MIXINS CARTE MENU
+////////PAGE //////////
 
+//HEADER - FLECHE RETOUR 
+@mixin fleche {
+    font-size: 25px;
+    color: rgb(66, 64, 64);
+    padding-right: 150px;
+    position: absolute;
+    left: 20px;
+}
+
+// CARTE MENU
 @mixin menuGlobal {
     background: rgb(246, 246, 246);
     border-radius: 33px;
@@ -50,6 +67,7 @@
     padding: 10px 20px;
 }
 
+//ALIGNEMENT TITRE+COEUR
 @mixin titreCoeur {
     display: flex;
     align-items: center;
@@ -57,6 +75,13 @@
 
 }
 
+//COEUR
+@mixin heart {
+    font-size: 25px;
+    margin-left: 50px;
+}
+
+//TITRE H2
 @mixin titreH2 {
 
     font-size: 1.7em;
@@ -64,10 +89,7 @@
     font-weight: normal;
 }
 
-@mixin heart {
-    font-size: 25px;
-    margin-left: 50px;
-}
+
 
 @mixin titrePlats {
     font-family: $fontRoboto;

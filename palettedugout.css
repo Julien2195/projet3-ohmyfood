@@ -411,7 +411,43 @@ header h1 {
   .restaurant-card {
     width: 49%;
   }
+  .cards-global {
+    display: flex;
+    justify-content: space-between;
+  }
+  .card-plats {
+    width: 30%;
+  }
 }
+footer {
+  background-color: rgb(53, 53, 53);
+  width: 100%;
+  padding: 20px 0;
+}
+footer .global-footer {
+  padding-left: 20px;
+}
+footer h2 {
+  color: white;
+  font-family: "Shrikhand", sans-serif;
+  font-weight: 300;
+}
+footer .fa-utensils {
+  margin-right: 20px;
+}
+footer .fa-handshake-angle {
+  margin-right: 11px;
+}
+footer ul {
+  padding: 0;
+  list-style-type: none;
+}
+footer li {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  color: white;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -488,7 +524,7 @@ h3 {
   background-color: white;
   border-radius: 15px;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
-  max-width: 400px;
+  max-width: 100%;
   height: 75px;
   margin: 20px 0;
 }
@@ -519,14 +555,14 @@ h3 {
   margin: 15px;
   font-weight: bold;
 }
-.prix .btn--primary {
+
+.btn--primary {
   background: linear-gradient(0deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 100%);
   width: 250px;
   border-radius: 35px;
-  margin: auto;
+  margin: 40px auto;
 }
-.prix .btn--primary p {
-  margin: 0;
+.btn--primary p {
   padding: 12px 20px;
   color: white;
   text-align: center;

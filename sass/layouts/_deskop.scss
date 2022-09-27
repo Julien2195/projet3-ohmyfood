@@ -34,4 +34,13 @@
 
 
     //////PAGES 1,2,3,4//////////
+
+    .cards-global {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .card-plats {
+        width: 30%;
+    }
 }

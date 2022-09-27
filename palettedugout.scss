@@ -9,7 +9,7 @@
 ///////LAYOUTS//////////////////
 @import "sass/layouts/header";
 @import 'sass/layouts/deskop';
-
+@import'sass/layouts/footer';
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 
 
@@ -37,12 +37,7 @@ header {
 
 
     .fa-arrow-left {
-        font-size: 25px;
-        color: rgb(66, 64, 64);
-        padding-right: 150px;
-        position: absolute;
-
-        left: 20px;
+        @include fleche;
     }
 
 }
@@ -90,7 +85,7 @@ h3 {
     background-color: white;
     border-radius: 15px;
     box-shadow: 0 0 2px rgb(0 0 0 / 0.2);
-    max-width: 400px;
+    max-width: 100%;
     height: 75px;
 
     margin: 20px 0;
@@ -132,20 +127,23 @@ h3 {
 
 
 
-    .btn--primary {
 
-        background: linear-gradient(0deg, rgba(147, 86, 220, 1) 0%, rgba(255, 121, 218, 1) 100%);
-        width: 250px;
-        border-radius: 35px;
-        margin: auto;
+}
 
-        p {
-            margin: 0;
-            padding: 12px 20px;
-            color: white;
-            text-align: center;
+.btn--primary {
 
-        }
+    background: linear-gradient(0deg, rgba(147, 86, 220, 1) 0%, rgba(255, 121, 218, 1) 100%);
+    width: 250px;
+    border-radius: 35px;
+    margin: 40px auto;
+
+
+    p {
+
+        padding: 12px 20px;
+        color: white;
+        text-align: center;
 
     }
+
 }

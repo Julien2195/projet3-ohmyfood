@@ -578,6 +578,13 @@ header h1 {
   .restaurant-card {
     width: 49%;
   }
+  .cards-global {
+    display: flex;
+    justify-content: space-between;
+  }
+  .card-plats {
+    width: 30%;
+  }
 }
 section {
   padding: 20px;
@@ -674,6 +681,7 @@ footer .fa-handshake-angle {
 }
 footer ul {
   padding: 0;
+  list-style-type: none;
 }
 footer li {
   font-family: "Roboto", sans-serif;
@@ -711,8 +719,4 @@ h3 {
 
 h4 {
   font-family: "Roboto", sans-serif;
-}
-
-ul {
-  list-style-type: none;
 }/*# sourceMappingURL=style.css.map */

@@ -15,7 +15,7 @@
 @import "sass/layouts/deskop";
 @import "sass/layouts/section";
 @import "sass/layouts/footer";
-@import 'sass/layouts/palettedugout';
+
 
 ////////////////////////////////////////////////////////////////
 body {
@@ -38,6 +38,7 @@ h1 {
 h2 {
     font-size: 1.8em;
     font-family: $fontRoboto;
+    margin: 0;
 }
 
 h3 {

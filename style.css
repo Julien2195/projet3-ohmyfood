@@ -443,7 +443,7 @@ section {
 header {
   background-color: #fff;
   width: 100%;
-  padding: 25px;
+  padding: 25px 0;
   display: flex;
   justify-content: center;
   box-shadow: 0 0 9px rgba(0, 0, 0, 0.2);
@@ -470,6 +470,7 @@ header h1 {
   flex-direction: column;
   flex-wrap: wrap;
   padding-bottom: 30px;
+  width: 100%;
 }
 .menu-principal h2 {
   text-align: center;
@@ -497,6 +498,7 @@ header h1 {
 #fonctionnement-general {
   background-color: #fff;
   padding: 20px;
+  width: 100%;
 }
 #fonctionnement-general .choix-fonctionnement {
   background-color: rgb(246, 246, 246);
@@ -504,7 +506,11 @@ header h1 {
   border-radius: 25px;
   position: relative;
   box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.2);
-  margin-bottom: 20px;
+  margin: 20px;
+}
+#fonctionnement-general .choix-fonctionnement .global-choix {
+  display: flex;
+  justify-content: space-around;
 }
 #fonctionnement-general .number-color {
   position: absolute;
@@ -536,11 +542,21 @@ header h1 {
   color: #9356DC;
 }
 
+@media screen and (min-width: 500px) {
+  main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .titre_principal {
+    display: flex;
+    justify-content: center;
+  }
+}
 @media screen and (min-width: 668px) {
   .global-choix {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
   }
   .choix-fonctionnement {
     width: 30%;
@@ -653,10 +669,6 @@ footer li {
 }
 
 body {
-  background: black;
-}
-
-body {
   background-color: rgb(243, 243, 243);
   margin: 0 auto;
 }
@@ -674,6 +686,7 @@ h1 {
 h2 {
   font-size: 1.8em;
   font-family: "Roboto", sans-serif;
+  margin: 0;
 }
 
 h3 {

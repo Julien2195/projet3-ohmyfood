@@ -48,19 +48,28 @@
     }
 }
 
+.global-choix {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 0 10px;
+}
+
 #fonctionnement-general {
     background-color: #fff;
-    padding: 20px;
     width: 100%;
+
+    h3 {
+        padding: 40px 0 20px 20px;
+    }
+
+
 
     .choix-fonctionnement {
         @include fonctionnementMenu;
-        margin: 20px;
+        margin-bottom: 30px;
 
-        .global-choix {
-            display: flex;
-            justify-content: space-around;
-        }
+
     }
 
     .number-color {

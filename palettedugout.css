@@ -387,7 +387,6 @@ header h1 {
 @media screen and (min-width: 500px) {
   main {
     display: flex;
-    align-items: center;
     flex-direction: column;
   }
   .titre_principal {
@@ -395,10 +394,11 @@ header h1 {
     justify-content: center;
   }
 }
-@media screen and (min-width: 668px) {
+@media screen and (min-width: 868px) {
   .global-choix {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
   }
   .choix-fonctionnement {
     width: 30%;

@@ -31,6 +31,30 @@
     opacity: 1;
   }
 }
+@-webkit-keyframes menu {
+  from {
+    transform: translateY(-10px);
+    transform: scale(0.6);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes menu {
+  from {
+    transform: translateY(-10px);
+    transform: scale(0.6);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -523,18 +547,55 @@ h3 {
 .card {
   background-color: white;
   border-radius: 15px;
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   max-width: 100%;
   height: 75px;
   margin: 20px 0;
+  opacity: 0;
+}
+.card.c1 {
+  -webkit-animation: menu 0.5s ease 100ms forwards;
+          animation: menu 0.5s ease 100ms forwards;
+}
+.card.c2 {
+  -webkit-animation: menu 0.5s ease 300ms forwards;
+          animation: menu 0.5s ease 300ms forwards;
+}
+.card.c3 {
+  -webkit-animation: menu 0.5s ease 500ms forwards;
+          animation: menu 0.5s ease 500ms forwards;
+}
+.card.c4 {
+  -webkit-animation: menu 0.5s ease 700ms forwards;
+          animation: menu 0.5s ease 700ms forwards;
+}
+.card.c5 {
+  -webkit-animation: menu 0.5s ease 900ms forwards;
+          animation: menu 0.5s ease 900ms forwards;
+}
+.card.c6 {
+  -webkit-animation: menu 0.5s ease 1.1s forwards;
+          animation: menu 0.5s ease 1.1s forwards;
+}
+.card.c7 {
+  -webkit-animation: menu 0.5s ease 1.3s forwards;
+          animation: menu 0.5s ease 1.3s forwards;
+}
+.card.c8 {
+  -webkit-animation: menu 0.5s ease 1.5s forwards;
+          animation: menu 0.5s ease 1.5s forwards;
+}
+.card.c9 {
+  -webkit-animation: menu 0.5s ease 1.7s forwards;
+          animation: menu 0.5s ease 1.7s forwards;
+}
+.card .card--modif {
+  padding: 15px 10px;
 }
 .card h4 {
   margin: 0;
   font-family: "Roboto", sans-serif;
   font-size: 1.1em;
-}
-.card .card--modif {
-  padding: 15px 10px;
 }
 .card .ellipse {
   white-space: nowrap;

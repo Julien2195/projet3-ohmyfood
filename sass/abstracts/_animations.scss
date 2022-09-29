@@ -58,19 +58,23 @@
 @keyframes animCircle{
     from{
     transform: translateY(0);
+    z-index: 20;
     }
     to{
     transform: translateY(-80px);
+    z-index:-50;
     }
     }
     
     @keyframes loaderAnimation {
         from {
             opacity: 1;
+            z-index: 20;
         }
     
         to {
             opacity: 0;
+            z-index:-50;
         }
     }
     

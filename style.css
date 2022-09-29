@@ -89,33 +89,41 @@
 @-webkit-keyframes animCircle {
   from {
     transform: translateY(0);
+    z-index: 20;
   }
   to {
     transform: translateY(-80px);
+    z-index: -50;
   }
 }
 @keyframes animCircle {
   from {
     transform: translateY(0);
+    z-index: 20;
   }
   to {
     transform: translateY(-80px);
+    z-index: -50;
   }
 }
 @-webkit-keyframes loaderAnimation {
   from {
     opacity: 1;
+    z-index: 20;
   }
   to {
     opacity: 0;
+    z-index: -50;
   }
 }
 @keyframes loaderAnimation {
   from {
     opacity: 1;
+    z-index: 20;
   }
   to {
     opacity: 0;
+    z-index: -50;
   }
 }
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -821,7 +829,7 @@ h4 {
 .loader {
   background-color: hsla(0deg, 0%, 100%, 0.9);
   position: fixed;
-  z-index: 1000;
+  z-index: 1;
   display: flex;
   justify-content: center;
   align-items: center;

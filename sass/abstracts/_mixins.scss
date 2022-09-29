@@ -103,3 +103,78 @@
     width: 50px;
     height: 4px;
 }
+
+@mixin Plats {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgb(0 0 0 / 0.1);
+    max-width: 100%;
+    height: 75px;
+    margin: 20px 0;
+    opacity: 0;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+
+    &.c1 {
+        animation: menu 0.5s ease 100ms forwards;
+    }
+
+    &.c2 {
+        animation: menu 0.5s ease 300ms forwards;
+    }
+
+    &.c3 {
+        animation: menu 0.5s ease 500ms forwards;
+    }
+
+    &.c4 {
+        animation: menu 0.5s ease 700ms forwards;
+    }
+
+    &.c5 {
+        animation: menu 0.5s ease 900ms forwards;
+    }
+
+    &.c6 {
+        animation: menu 0.5s ease 1.1s forwards;
+    }
+
+    &.c7 {
+        animation: menu 0.5s ease 1.3s forwards;
+    }
+
+    &.c8 {
+        animation: menu 0.5s ease 1.5s forwards;
+    }
+
+    &.c9 {
+        animation: menu 0.5s ease 1.7s forwards;
+    }
+
+    .card--modif {
+        padding: 15px 0 15px 10px;
+
+
+    }
+
+    h4 {
+        margin: 0;
+        font-family: $fontRoboto;
+        font-size: 1.1em;
+        white-space: nowrap;
+    }
+
+
+    .ellipse {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    p {
+        margin-top: 10px;
+        font-family: $fontRoboto;
+    }
+
+}

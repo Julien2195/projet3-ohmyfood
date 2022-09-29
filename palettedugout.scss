@@ -82,93 +82,44 @@ h3 {
 }
 
 .card {
-    background-color: white;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgb(0 0 0 / 0.1);
-    max-width: 100%;
-    height: 75px;
-    margin: 20px 0;
-    opacity: 0;
 
-    &.c1 {
-        animation: menu 0.5s ease 100ms forwards;
-    }
-
-    &.c2 {
-        animation: menu 0.5s ease 300ms forwards;
-    }
-
-    &.c3 {
-        animation: menu 0.5s ease 500ms forwards;
-    }
-
-    &.c4 {
-        animation: menu 0.5s ease 700ms forwards;
-    }
-
-    &.c5 {
-        animation: menu 0.5s ease 900ms forwards;
-    }
-
-    &.c6 {
-        animation: menu 0.5s ease 1.1s forwards;
-    }
-
-    &.c7 {
-        animation: menu 0.5s ease 1.3s forwards;
-    }
-
-    &.c8 {
-        animation: menu 0.5s ease 1.5s forwards;
-    }
-
-    &.c9 {
-        animation: menu 0.5s ease 1.7s forwards;
-    }
+    @include Plats;
 
 
-    .card--modif {
-        padding: 15px 10px;
+}
 
-
-    }
-
-    h4 {
-        margin: 0;
-        font-family: $fontRoboto;
-        font-size: 1.1em;
-    }
-
-
-    .ellipse {
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-
-    p {
-        margin-top: 10px;
-        font-family: $fontRoboto;
-    }
-
-
+.card--modif {
+    width: 74%;
 }
 
 .information-menu {
-    display: flex;
-    justify-content: space-between;
+    margin-top: 30px;
 }
+
+.annimation-color {
+    background-color: #99E2D0;
+    width: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa-circle-check {
+    display: flex;
+    color: white;
+    font-size: 25px;
+    align-items: center;
+}
+
 
 .prix {
     margin: 15px;
     font-weight: bold;
 
-
-
-
 }
 
-.btn--primary {
+.btn {
 
     background: linear-gradient(0deg, rgba(147, 86, 220, 1) 0%, rgba(255, 121, 218, 1) 100%);
     width: 250px;
@@ -184,4 +135,38 @@ h3 {
 
     }
 
+}
+
+.card:hover .annimation-color .fa-circle-check {
+    animation: circle 500ms;
+}
+
+.card:hover .annimation-color {
+    animation: vert 650ms forwards;
+
+    opacity: 1;
+}
+
+
+
+@keyframes circle {
+    from {
+        transform: rotate(0);
+    }
+
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes vert {
+    from {
+        width: 0px;
+
+    }
+
+    to {
+        width: 60px;
+    }
 }

@@ -552,6 +552,9 @@ h3 {
   height: 75px;
   margin: 20px 0;
   opacity: 0;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
 }
 .card.c1 {
   -webkit-animation: menu 0.5s ease 100ms forwards;
@@ -590,12 +593,13 @@ h3 {
           animation: menu 0.5s ease 1.7s forwards;
 }
 .card .card--modif {
-  padding: 15px 10px;
+  padding: 15px 0 15px 10px;
 }
 .card h4 {
   margin: 0;
   font-family: "Roboto", sans-serif;
   font-size: 1.1em;
+  white-space: nowrap;
 }
 .card .ellipse {
   white-space: nowrap;
@@ -607,9 +611,28 @@ h3 {
   font-family: "Roboto", sans-serif;
 }
 
+.card--modif {
+  width: 74%;
+}
+
 .information-menu {
+  margin-top: 30px;
+}
+
+.annimation-color {
+  background-color: #99E2D0;
+  width: 0;
+  height: 100%;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+}
+
+.fa-circle-check {
+  display: flex;
+  color: white;
+  font-size: 25px;
+  align-items: center;
 }
 
 .prix {
@@ -617,14 +640,59 @@ h3 {
   font-weight: bold;
 }
 
-.btn--primary {
+.btn {
   background: linear-gradient(0deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 100%);
   width: 250px;
   border-radius: 35px;
   margin: 40px auto;
 }
-.btn--primary p {
+.btn p {
   padding: 12px 20px;
   color: white;
   text-align: center;
+}
+
+.card:hover .annimation-color .fa-circle-check {
+  -webkit-animation: circle 500ms;
+          animation: circle 500ms;
+}
+
+.card:hover .annimation-color {
+  -webkit-animation: vert 650ms forwards;
+          animation: vert 650ms forwards;
+  opacity: 1;
+}
+
+@-webkit-keyframes circle {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes circle {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes vert {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 60px;
+  }
+}
+@keyframes vert {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 60px;
+  }
 }/*# sourceMappingURL=palettedugout.css.map */

@@ -503,6 +503,9 @@ footer li {
   font-size: 20px;
   color: white;
 }
+footer a {
+  color: white;
+}
 
 * {
   box-sizing: border-box;
@@ -684,6 +687,11 @@ h3 {
   width: 250px;
   border-radius: 35px;
   margin: 40px auto;
+}
+.btn:hover:hover {
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+  transition-duration: 0.25s;
+  background: linear-gradient(0deg, rgb(147, 86, 220) 0%, rgb(252, 161, 226) 100%);
 }
 .btn p {
   padding: 12px 20px;

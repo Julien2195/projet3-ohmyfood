@@ -549,6 +549,11 @@ header h1 {
   background: linear-gradient(0deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 100%);
   border-radius: 35px;
 }
+.menu-principal .btn--primary:hover {
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+  transition-duration: 0.25s;
+  background: linear-gradient(0deg, rgb(147, 86, 220) 0%, rgb(252, 161, 226) 100%);
+}
 .menu-principal .btn--primary h3 {
   margin: 0;
   padding: 12px 20px;
@@ -742,6 +747,9 @@ footer ul {
 footer li {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
+  color: white;
+}
+footer a {
   color: white;
 }
 

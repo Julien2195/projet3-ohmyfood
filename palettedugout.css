@@ -526,6 +526,11 @@ h4 {
   white-space: nowrap;
 }
 
+p {
+  margin-top: 10px;
+  font-family: "Roboto", sans-serif;
+}
+
 header {
   align-items: center;
   position: relative;
@@ -630,17 +635,12 @@ h3 {
   -webkit-animation: menu 0.5s ease 1.7s forwards;
           animation: menu 0.5s ease 1.7s forwards;
 }
+.card.c9 {
+  -webkit-animation: menu 0.5s ease 1.9s forwards;
+          animation: menu 0.5s ease 1.9s forwards;
+}
 .card .card--modif {
   padding: 15px 0 15px 10px;
-}
-.card .ellipse {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.card p {
-  margin-top: 10px;
-  font-family: "Roboto", sans-serif;
 }
 
 .card--modif {
@@ -652,13 +652,19 @@ h3 {
   margin: 30px 20px 0 0;
 }
 
-.annimation-color {
+.animation-color {
   background-color: #99E2D0;
   width: 0;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.ellipse {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .fa-circle-check {
@@ -685,12 +691,12 @@ h3 {
   text-align: center;
 }
 
-.card:hover .annimation-color .fa-circle-check {
+.card:hover .animation-color .fa-circle-check {
   -webkit-animation: circle 500ms;
           animation: circle 500ms;
 }
 
-.card:hover .annimation-color {
+.card:hover .animation-color {
   -webkit-animation: vert 650ms forwards;
           animation: vert 650ms forwards;
   opacity: 1;

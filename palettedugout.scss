@@ -36,6 +36,11 @@ h4 {
     white-space: nowrap;
 }
 
+p {
+    margin-top: 10px;
+    font-family: $fontRoboto;
+}
+
 ////////////////HEDER///////////
 header {
     align-items: center;
@@ -104,13 +109,12 @@ h3 {
     margin: 30px 20px 0 0;
 }
 
-.annimation-color {
-    background-color: #99E2D0;
-    width: 0;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.animation-color {
+@include animationColor;
+}
+
+.ellipse {
+    @include ellipse;
 }
 
 .fa-circle-check {
@@ -145,11 +149,11 @@ h3 {
 
 }
 
-.card:hover .annimation-color .fa-circle-check {
+.card:hover .animation-color .fa-circle-check {
     animation: circle 500ms;
 }
 
-.card:hover .annimation-color {
+.card:hover .animation-color {
     animation: vert 650ms forwards;
 
     opacity: 1;

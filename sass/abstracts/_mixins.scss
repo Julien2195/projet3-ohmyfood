@@ -90,20 +90,20 @@
 }
 
 
-
+//TITRE H3
 @mixin titrePlats {
     font-family: $fontRoboto;
     font-weight: normal;
     margin: 0;
     padding-bottom: 7px;
 }
-
+//BORDURE EN DESSOUS DES TITRES H3
 @mixin BordurePlats {
     background-color: rgb(153, 226, 208);
     width: 50px;
     height: 4px;
 }
-
+//CARD DES PLATS 
 @mixin Plats {
     background-color: white;
     border-radius: 15px;
@@ -150,6 +150,9 @@
     &.c9 {
         animation: menu 0.5s ease 1.7s forwards;
     }
+    &.c9 {
+        animation: menu 0.5s ease 1.9s forwards;
+    }
 
     .card--modif {
         padding: 15px 0 15px 10px;
@@ -158,17 +161,19 @@
     }
 
 
+}
 
+@mixin animationColor {
+    background-color: #99E2D0;
+    width: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-    .ellipse {
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-
-    p {
-        margin-top: 10px;
-        font-family: $fontRoboto;
-    }
-
+@mixin ellipse {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }

@@ -53,3 +53,26 @@
         width: 60px;
     }
 }
+
+//LOADER
+@keyframes animCircle{
+    from{
+    transform: translateY(0);
+    }
+    to{
+    transform: translateY(-80px);
+    }
+    }
+    
+    @keyframes loaderAnimation {
+        from {
+            opacity: 1;
+        }
+    
+        to {
+            opacity: 0;
+        }
+    }
+    
+    
+    

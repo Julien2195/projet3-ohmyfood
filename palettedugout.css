@@ -55,6 +55,38 @@
     opacity: 1;
   }
 }
+@-webkit-keyframes circle {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes circle {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes vert {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 60px;
+  }
+}
+@keyframes vert {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 60px;
+  }
+}
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -418,7 +450,7 @@ header h1 {
     justify-content: center;
   }
 }
-@media screen and (min-width: 868px) {
+@media screen and (min-width: 1026px) {
   .global-choix {
     display: flex;
     flex-direction: row;
@@ -487,6 +519,13 @@ a {
   font-family: "Roboto", sans-serif;
 }
 
+h4 {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  white-space: nowrap;
+}
+
 header {
   align-items: center;
   position: relative;
@@ -553,7 +592,6 @@ h3 {
   margin: 20px 0;
   opacity: 0;
   display: flex;
-  justify-content: space-between;
   overflow: hidden;
 }
 .card.c1 {
@@ -595,12 +633,6 @@ h3 {
 .card .card--modif {
   padding: 15px 0 15px 10px;
 }
-.card h4 {
-  margin: 0;
-  font-family: "Roboto", sans-serif;
-  font-size: 1.1em;
-  white-space: nowrap;
-}
 .card .ellipse {
   white-space: nowrap;
   overflow: hidden;
@@ -612,11 +644,12 @@ h3 {
 }
 
 .card--modif {
-  width: 74%;
+  width: 50%;
+  flex: 1;
 }
 
 .information-menu {
-  margin-top: 30px;
+  margin: 30px 20px 0 0;
 }
 
 .annimation-color {
@@ -661,38 +694,4 @@ h3 {
   -webkit-animation: vert 650ms forwards;
           animation: vert 650ms forwards;
   opacity: 1;
-}
-
-@-webkit-keyframes circle {
-  from {
-    transform: rotate(0);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes circle {
-  from {
-    transform: rotate(0);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-@-webkit-keyframes vert {
-  from {
-    width: 0px;
-  }
-  to {
-    width: 60px;
-  }
-}
-@keyframes vert {
-  from {
-    width: 0px;
-  }
-  to {
-    width: 60px;
-  }
 }/*# sourceMappingURL=palettedugout.css.map */

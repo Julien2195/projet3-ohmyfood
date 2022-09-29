@@ -113,7 +113,6 @@
     margin: 20px 0;
     opacity: 0;
     display: flex;
-    justify-content: space-between;
     overflow: hidden;
 
     &.c1 {
@@ -158,12 +157,7 @@
 
     }
 
-    h4 {
-        margin: 0;
-        font-family: $fontRoboto;
-        font-size: 1.1em;
-        white-space: nowrap;
-    }
+
 
 
     .ellipse {

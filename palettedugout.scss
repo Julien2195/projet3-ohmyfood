@@ -29,6 +29,13 @@ a {
     font-family: $fontRoboto;
 }
 
+h4 {
+    margin: 0;
+    font-family: $fontRoboto;
+    font-size: 1em;
+    white-space: nowrap;
+}
+
 ////////////////HEDER///////////
 header {
     align-items: center;
@@ -89,11 +96,12 @@ h3 {
 }
 
 .card--modif {
-    width: 74%;
+    width: 50%;
+    flex: 1;
 }
 
 .information-menu {
-    margin-top: 30px;
+    margin: 30px 20px 0 0;
 }
 
 .annimation-color {
@@ -145,28 +153,4 @@ h3 {
     animation: vert 650ms forwards;
 
     opacity: 1;
-}
-
-
-
-@keyframes circle {
-    from {
-        transform: rotate(0);
-    }
-
-
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes vert {
-    from {
-        width: 0px;
-
-    }
-
-    to {
-        width: 60px;
-    }
 }

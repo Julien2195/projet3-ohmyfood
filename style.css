@@ -54,6 +54,38 @@
     opacity: 1;
   }
 }
+@-webkit-keyframes circle {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes circle {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes vert {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 60px;
+  }
+}
+@keyframes vert {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 60px;
+  }
+}
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -585,7 +617,7 @@ header h1 {
     justify-content: center;
   }
 }
-@media screen and (min-width: 868px) {
+@media screen and (min-width: 1026px) {
   .global-choix {
     display: flex;
     flex-direction: row;

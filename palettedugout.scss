@@ -29,6 +29,13 @@ a {
     font-family: $fontRoboto;
 }
 
+
+    h2 {
+        font-family: 'Shrikhand', cursive;
+        font-size:1.7em
+        
+    }
+
 h4 {
     margin: 0;
     font-family: $fontRoboto;
@@ -45,7 +52,6 @@ p {
 header {
     align-items: center;
     position: relative;
-
 
 
     .fa-arrow-left {
@@ -67,19 +73,45 @@ header {
 main {
 
     @include menuGlobal;
+}
 
+.cards-global{
+    margin-top:30px;
 
-    .titre_principal {
-        @include titreCoeur;
-
-
-        h2 {
-            @include titreH2;
-        }
+    .card-plats{
+        margin-bottom:50px;
     }
+}
 
-    .fa-heart {
-        @include heart;
+.alignement-heart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.heart-regular,
+.heart-solid {
+    font-size: 35px;
+}
+
+.heart-regular {
+    position: absolute;
+}
+
+.heart-solid {
+    position: relative;
+    opacity: 0;
+    margin-right: 40px;
+}
+
+.coeur--modif {
+    padding-left: 50px;
+}
+
+.coeur--modif:hover {
+    .heart-solid {
+        animation: heartAnimation 500ms forwards;
     }
 }
 
@@ -110,7 +142,7 @@ h3 {
 }
 
 .animation-color {
-@include animationColor
+    @include animationColor
 }
 
 .ellipse {
@@ -138,7 +170,7 @@ h3 {
     border-radius: 35px;
     margin: 40px auto;
 
-    &:hover{
+    &:hover {
         &:hover {
             box-shadow: 4px 4px 10px rgb(0 0 0 / 50%);
             transition-duration: 0.25s;
@@ -157,11 +189,18 @@ h3 {
 }
 
 .card:hover .animation-color .fa-circle-check {
-    animation: circle 500ms;
+    transform: rotate(360deg);
+    transition: 600ms;
+}
+
+.card .animation-color {
+    width: 0;
+    transition: 400ms ease-out;
+
 }
 
 .card:hover .animation-color {
-    animation: vert 650ms forwards;
-
-    opacity: 1;
+    width: 70px;
+    background-color: #99E2D0;
+    transition: 400ms ease-in;
 }

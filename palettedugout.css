@@ -55,38 +55,6 @@
     opacity: 1;
   }
 }
-@-webkit-keyframes circle {
-  from {
-    transform: rotate(0);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-@keyframes circle {
-  from {
-    transform: rotate(0);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-@-webkit-keyframes vert {
-  from {
-    width: 0px;
-  }
-  to {
-    width: 60px;
-  }
-}
-@keyframes vert {
-  from {
-    width: 0px;
-  }
-  to {
-    width: 60px;
-  }
-}
 @-webkit-keyframes animCircle {
   from {
     transform: translateY(0);
@@ -562,6 +530,11 @@ a {
   font-family: "Roboto", sans-serif;
 }
 
+h2 {
+  font-family: "Shrikhand", cursive;
+  font-size: 1.7em;
+}
+
 h4 {
   margin: 0;
   font-family: "Roboto", sans-serif;
@@ -604,18 +577,42 @@ main {
   top: -30px;
   padding: 10px 20px;
 }
-main .titre_principal {
+
+.cards-global {
+  margin-top: 30px;
+}
+.cards-global .card-plats {
+  margin-bottom: 50px;
+}
+
+.alignement-heart {
   display: flex;
+  justify-content: center;
   align-items: center;
 }
-main .titre_principal h2 {
-  font-size: 1.7em;
-  font-family: "Shrikhand", sans-serif;
-  font-weight: normal;
+
+.heart-regular,
+.heart-solid {
+  font-size: 35px;
 }
-main .fa-heart {
-  font-size: 25px;
-  margin-left: 50px;
+
+.heart-regular {
+  position: absolute;
+}
+
+.heart-solid {
+  position: relative;
+  opacity: 0;
+  margin-right: 40px;
+}
+
+.coeur--modif {
+  padding-left: 50px;
+}
+
+.coeur--modif:hover .heart-solid {
+  -webkit-animation: heartAnimation 500ms forwards;
+          animation: heartAnimation 500ms forwards;
 }
 
 h3 {
@@ -740,12 +737,17 @@ h3 {
 }
 
 .card:hover .animation-color .fa-circle-check {
-  -webkit-animation: circle 500ms;
-          animation: circle 500ms;
+  transform: rotate(360deg);
+  transition: 600ms;
+}
+
+.card .animation-color {
+  width: 0;
+  transition: 400ms ease-out;
 }
 
 .card:hover .animation-color {
-  -webkit-animation: vert 650ms forwards;
-          animation: vert 650ms forwards;
-  opacity: 1;
+  width: 70px;
+  background-color: #99E2D0;
+  transition: 400ms ease-in;
 }/*# sourceMappingURL=palettedugout.css.map */

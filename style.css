@@ -54,38 +54,6 @@
     opacity: 1;
   }
 }
-@-webkit-keyframes circle {
-  from {
-    transform: rotate(0);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-@keyframes circle {
-  from {
-    transform: rotate(0);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-@-webkit-keyframes vert {
-  from {
-    width: 0px;
-  }
-  to {
-    width: 60px;
-  }
-}
-@keyframes vert {
-  from {
-    width: 0px;
-  }
-  to {
-    width: 60px;
-  }
-}
 @-webkit-keyframes animCircle {
   from {
     transform: translateY(0);

@@ -13,17 +13,17 @@
 
 @media screen and (min-width:1026px) {
 
-    .global-choix {
+    .selection__global{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
     }
 
-    .choix-fonctionnement {
+    .fonctionnement__number {
         width: 30%;
     }
 
-    #restaurants-global {
+    #main__restaurant {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;

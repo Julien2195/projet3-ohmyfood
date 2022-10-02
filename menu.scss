@@ -1,3 +1,4 @@
+/////ABSTRACTS/////
 @import 'sass/abstracts/mixins';
 @import 'sass/abstracts/variables';
 @import 'sass/abstracts/animations';
@@ -12,7 +13,7 @@
 @import'sass/layouts/footer';
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 
-
+//////BALISES GENERALES///////
 * {
     box-sizing: border-box;
 }
@@ -35,7 +36,11 @@ a {
         font-size:1.7em
         
     }
-
+    h3 {
+        @include titrePlats;
+    
+    
+    }
 h4 {
     margin: 0;
     font-family: $fontRoboto;
@@ -48,7 +53,7 @@ p {
     font-family: $fontRoboto;
 }
 
-////////////////HEDER///////////
+////////////////HEADER///////////
 header {
     align-items: center;
     position: relative;
@@ -82,7 +87,7 @@ main {
         margin-bottom:50px;
     }
 }
-
+/////COEUR//////
 .alignement-heart {
     display: flex;
     justify-content: center;
@@ -115,12 +120,8 @@ main {
     }
 }
 
-h3 {
-    @include titrePlats;
 
-
-}
-
+////////CARDS/////////
 .border-color {
     @include BordurePlats;
 }
@@ -145,6 +146,31 @@ h3 {
     @include animationColor
 }
 
+.prix {
+    margin: 15px;
+    font-weight: bold;
+
+}
+
+
+.card .animation-color {
+    width: 0;
+    transition: 400ms ease-out;
+
+}
+
+.card:hover .animation-color {
+    width: 70px;
+    background-color: #99E2D0;
+    transition: 400ms ease-in;
+}
+
+
+.card:hover .animation-color .fa-circle-check {
+    transform: rotate(360deg);
+    transition: 600ms;
+}
+
 .ellipse {
     @include ellipse;
 }
@@ -157,12 +183,8 @@ h3 {
 }
 
 
-.prix {
-    margin: 15px;
-    font-weight: bold;
 
-}
-
+////////BOUTON///////
 .btn {
 
     background: linear-gradient(0deg, rgba(147, 86, 220, 1) 0%, rgba(255, 121, 218, 1) 100%);
@@ -188,19 +210,3 @@ h3 {
 
 }
 
-.card:hover .animation-color .fa-circle-check {
-    transform: rotate(360deg);
-    transition: 600ms;
-}
-
-.card .animation-color {
-    width: 0;
-    transition: 400ms ease-out;
-
-}
-
-.card:hover .animation-color {
-    width: 70px;
-    background-color: #99E2D0;
-    transition: 400ms ease-in;
-}

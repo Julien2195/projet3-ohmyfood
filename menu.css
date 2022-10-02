@@ -1,36 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-@-webkit-keyframes heartAnimation {
-  from {
-    transform: scale(0);
-    transform-origin: bottom;
-    opacity: 0;
-  }
-  to {
-    transform: scale(1);
-    background: linear-gradient(0deg, rgb(255, 121, 218) 0%, rgb(147, 86, 220) 75%, rgb(147, 86, 220) 100%);
-    color: transparent;
-    -webkit-background-clip: text;
-            background-clip: text;
-    opacity: 1;
-  }
-}
-@keyframes heartAnimation {
-  from {
-    transform: scale(0);
-    transform-origin: bottom;
-    opacity: 0;
-  }
-  to {
-    transform: scale(1);
-    background: linear-gradient(0deg, rgb(255, 121, 218) 0%, rgb(147, 86, 220) 75%, rgb(147, 86, 220) 100%);
-    color: transparent;
-    -webkit-background-clip: text;
-            background-clip: text;
-    opacity: 1;
-  }
-}
 @-webkit-keyframes menu {
   from {
     transform: translateY(-10px);
@@ -459,15 +429,15 @@ header h1 {
   }
 }
 @media screen and (min-width: 1026px) {
-  .global-choix {
+  .selection__global {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
   }
-  .choix-fonctionnement {
+  .fonctionnement__number {
     width: 30%;
   }
-  #restaurants-global {
+  #main__restaurant {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -533,6 +503,13 @@ a {
 h2 {
   font-family: "Shrikhand", cursive;
   font-size: 1.7em;
+}
+
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  margin: 0;
+  padding-bottom: 7px;
 }
 
 h4 {
@@ -615,13 +592,6 @@ main {
           animation: heartAnimation 500ms forwards;
 }
 
-h3 {
-  font-family: "Roboto", sans-serif;
-  font-weight: normal;
-  margin: 0;
-  padding-bottom: 7px;
-}
-
 .border-color {
   background-color: rgb(153, 226, 208);
   width: 50px;
@@ -701,6 +671,27 @@ h3 {
   justify-content: center;
 }
 
+.prix {
+  margin: 15px;
+  font-weight: bold;
+}
+
+.card .animation-color {
+  width: 0;
+  transition: 400ms ease-out;
+}
+
+.card:hover .animation-color {
+  width: 70px;
+  background-color: #99E2D0;
+  transition: 400ms ease-in;
+}
+
+.card:hover .animation-color .fa-circle-check {
+  transform: rotate(360deg);
+  transition: 600ms;
+}
+
 .ellipse {
   white-space: nowrap;
   overflow: hidden;
@@ -712,11 +703,6 @@ h3 {
   color: white;
   font-size: 25px;
   align-items: center;
-}
-
-.prix {
-  margin: 15px;
-  font-weight: bold;
 }
 
 .btn {
@@ -734,20 +720,4 @@ h3 {
   padding: 12px 20px;
   color: white;
   text-align: center;
-}
-
-.card:hover .animation-color .fa-circle-check {
-  transform: rotate(360deg);
-  transition: 600ms;
-}
-
-.card .animation-color {
-  width: 0;
-  transition: 400ms ease-out;
-}
-
-.card:hover .animation-color {
-  width: 70px;
-  background-color: #99E2D0;
-  transition: 400ms ease-in;
 }/*# sourceMappingURL=menu.css.map */

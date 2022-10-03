@@ -31,16 +31,17 @@ a {
 }
 
 
-    h2 {
-        font-family: 'Shrikhand', cursive;
-        font-size:1.7em
-        
-    }
-    h3 {
-        @include titrePlats;
-    
-    
-    }
+h2 {
+    font-family: 'Shrikhand', cursive;
+    font-size: 1.7em
+}
+
+h3 {
+    @include titrePlats;
+
+
+}
+
 h4 {
     margin: 0;
     font-family: $fontRoboto;
@@ -80,13 +81,14 @@ main {
     @include menuGlobal;
 }
 
-.cards-global{
-    margin-top:30px;
+.cards-global {
+    margin-top: 30px;
 
-    .card-plats{
-        margin-bottom:50px;
+    .card-plats {
+        margin-bottom: 50px;
     }
 }
+
 /////COEUR//////
 .alignement-heart {
     display: flex;
@@ -108,6 +110,9 @@ main {
     position: relative;
     opacity: 0;
     margin-right: 40px;
+    transform: scale(0);
+    transform-origin: bottom;
+    transition: 500ms;
 }
 
 .coeur--modif {
@@ -116,7 +121,11 @@ main {
 
 .coeur--modif:hover {
     .heart-solid {
-        animation: heartAnimation 500ms forwards;
+        transform: scale(1);
+        background: linear-gradient(0deg, rgba(255, 121, 218, 1) 0%, rgba(147, 86, 220, 1) 75%, rgba(147, 86, 220, 1) 100%);
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        opacity: 1;
     }
 }
 
@@ -209,4 +218,3 @@ main {
     }
 
 }
-

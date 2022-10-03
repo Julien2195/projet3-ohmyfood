@@ -11,19 +11,24 @@
 @mixin fonctionnementMenu {
 
     background-color: rgb(246, 246, 246);
-    padding: 20px 0 20px 10px;
+    padding: 25px 0 25px 10px;
     border-radius: 25px;
     position: relative;
     box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+    cursor: pointer;
+    &:hover{
+        background-color: rgba(252, 173, 255,0.2);
+    }
 }
 
 //MAIN - NUMERO (1,2,3)
 @mixin number {
     position: absolute;
-    top: 18px;
+    top: 22px;
     left: -10px;
     background-color: #9356DC;
-    padding: 5px 10px;
+    padding: 7px 12px;
     border-radius: 100%;
     color: white;
 }

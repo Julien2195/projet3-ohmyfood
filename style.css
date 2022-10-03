@@ -505,6 +505,7 @@ header h1 {
 }
 .position .fa-location-dot {
   font-size: 20px;
+  padding-right: 20px;
 }
 
 .main-menu {
@@ -519,7 +520,7 @@ header h1 {
 }
 .main-menu h2 {
   text-align: center;
-  padding: 40px 0;
+  padding: 40px 0 20px 0;
   margin: 0;
 }
 .main-menu p {
@@ -527,11 +528,12 @@ header h1 {
   font-family: "Roboto", sans-serif;
   font-size: 1.1em;
   text-align: center;
-  padding-bottom: 10px;
   font-weight: 300;
 }
 .main-menu .btn--primary {
   background: linear-gradient(0deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 100%);
+  margin: 25px 0;
+  padding: 5px 0;
   border-radius: 35px;
 }
 .main-menu .btn--primary:hover {
@@ -541,8 +543,10 @@ header h1 {
 }
 .main-menu .btn--primary h3 {
   margin: 0;
-  padding: 12px 20px;
+  padding: 12px 25px;
   color: white;
+  font-size: 1.2em;
+  font-weight: normal;
 }
 
 .selection__global {
@@ -561,18 +565,22 @@ header h1 {
 }
 #main__fonctionnement .fonctionnement__number {
   background-color: rgb(246, 246, 246);
-  padding: 20px 0 20px 10px;
+  padding: 25px 0 25px 10px;
   border-radius: 25px;
   position: relative;
   box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.2);
   margin-bottom: 30px;
+  cursor: pointer;
+}
+#main__fonctionnement .fonctionnement__number:hover {
+  background-color: rgba(252, 173, 255, 0.2);
 }
 #main__fonctionnement .number__color {
   position: absolute;
-  top: 18px;
+  top: 22px;
   left: -10px;
   background-color: #9356DC;
-  padding: 5px 10px;
+  padding: 7px 12px;
   border-radius: 100%;
   color: white;
 }
@@ -725,6 +733,7 @@ footer h2 {
   color: white;
   font-family: "Shrikhand", sans-serif;
   font-weight: 300;
+  font-size: 1.3em;
 }
 footer .fa-utensils {
   margin-right: 20px;

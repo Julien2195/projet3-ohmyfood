@@ -605,13 +605,6 @@ header h1 {
   color: #9356DC;
 }
 
-@media scren and (min-width: 200px) and (max-width: 500px) {
-  .card:active .animation-color {
-    width: 70px;
-    background-color: #99E2D0;
-    transition: 400ms ease-in;
-  }
-}
 @media screen and (min-width: 500px) {
   main {
     display: flex;

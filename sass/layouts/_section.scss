@@ -66,12 +66,12 @@ h3 {
         padding: 10px 0px 0 0;
     }
 
-    .fa-regular {
+    .far {
         position: absolute;
         right: 50px;
     }
 
-    .fa-solid {
+    .fas {
         position: relative;
         opacity: 0;
         margin-right: 40px;
@@ -82,7 +82,7 @@ h3 {
 
 
     .coeur--modif:hover {
-        .fa-solid {
+        .fas {
             transform: scale(1);
 
             background: linear-gradient(0deg, rgba(255, 121, 218, 1) 0%, rgba(147, 86, 220, 1) 75%, rgba(147, 86, 220, 1) 100%);

@@ -464,11 +464,11 @@ h3 {
   font-size: 35px;
   padding: 10px 0px 0 0;
 }
-.card-img .fa-regular {
+.card-img .far {
   position: absolute;
   right: 50px;
 }
-.card-img .fa-solid {
+.card-img .fas {
   position: relative;
   opacity: 0;
   margin-right: 40px;
@@ -476,7 +476,7 @@ h3 {
   transform: scale(0);
   transform-origin: bottom;
 }
-.card-img .coeur--modif:hover .fa-solid {
+.card-img .coeur--modif:hover .fas {
   transform: scale(1);
   background: linear-gradient(0deg, rgb(255, 121, 218) 0%, rgb(147, 86, 220) 75%, rgb(147, 86, 220) 100%);
   -webkit-text-fill-color: transparent;
@@ -594,7 +594,7 @@ header h1 {
   display: flex;
   align-items: center;
 }
-#main__fonctionnement .fa-mobile-screen-button,
+#main__fonctionnement .fa-mobile-alt,
 #main__fonctionnement .fa-list-ul,
 #main__fonctionnement .fa-store {
   color: #7e7e7e;
@@ -700,11 +700,11 @@ h3 {
   font-size: 35px;
   padding: 10px 0px 0 0;
 }
-.card-img .fa-regular {
+.card-img .far {
   position: absolute;
   right: 50px;
 }
-.card-img .fa-solid {
+.card-img .fas {
   position: relative;
   opacity: 0;
   margin-right: 40px;
@@ -712,7 +712,7 @@ h3 {
   transform: scale(0);
   transform-origin: bottom;
 }
-.card-img .coeur--modif:hover .fa-solid {
+.card-img .coeur--modif:hover .fas {
   transform: scale(1);
   background: linear-gradient(0deg, rgb(255, 121, 218) 0%, rgb(147, 86, 220) 75%, rgb(147, 86, 220) 100%);
   -webkit-text-fill-color: transparent;

@@ -175,7 +175,7 @@ main {
 }
 
 
-.card:hover .animation-color .fa-circle-check {
+.card:hover .animation-color .fa-check-circle {
     transform: rotate(360deg);
     transition: 600ms;
 }
@@ -184,7 +184,7 @@ main {
     @include ellipse;
 }
 
-.fa-circle-check {
+.fa-check-circle {
     display: flex;
     color: white;
     font-size: 25px;
